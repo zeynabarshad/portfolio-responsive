@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <header>
+            <h3 class="name">Zainab Arshad</h3>
+            <h3 class="work">Currently working on  selfmade Projects </h3>
+            <h3></h3>
+            <ul class="list">
+                <li > <a href="/work.html">Work</a></li>
+                <li><a href="/index.html">Home</a></li>
+               
+                <li><a href="#con">Hire me/Contact</a></li>
+            </ul>
+        </header>
+        <div class="developer">
+            <h1>FRONT-END <br>
+            DEVELOPER</h1>
+        </div>
+        <div class="developer-img ">
+            <button ><a style="text-decoration: none; color: rgb(223, 222, 220); background-color: transparent;" href="/ACTUAL-RECUME.pdf" download>GET RESUME <i class="fa-solid fa-arrow-down" style="font-size: 30px; background-color: transparent; color: rgb(223, 222, 220)  ; padding-left: 5px;"></i> </a></button>
+        </div>
+        <div class="developer-name">
+            
+            <p class="icon down-arrow" id="downArrow" ><i class="fa-solid fa-arrow-down" style="font-size: 70px;"></i></p>
+        <h4 class="detail">I'M A FRONT-END DEVELOPER <br> SPECIALIZING IN CREATING RESPONSIVE , <br>USER-FREINDLY WEBSITES WITH HTML,CSS,JS <br>BOOTSTRAP AND REACT.JS.LET'S BRING <br> YOUR VISION TO LIFE. </h4>
+        
+        <h1 class="n">ZAINAB <br>ARSHAD</h1>
+        </div>
+        <div class="services reveal">
+            <div class="ser">
+            <p>[WHAT YOU'LL GET..]</p>
+            <h1>SERVICES</h1>
+            <p>for you..</p></div>
+            <div class="pehli reveal">
+                <p>[01]</p>
+                <h1 style="padding-left: 190px;">Responsive Web Design</h1>
+                <p style="padding-left: 175px;">Creating fully responsive websites that work seamlessly <br> across different devices (desktops, tablets,and smartphones). <br>Things as per your recuirments.</p>
+                
+            </div>
+            <div class="pehli reveal">
+                <p>[02]</p>
+                <h1 style="padding-left: 190px;">Single Page Applications </h1>
+                <p style="padding-left:175px ;">Building dynamic and interactive SPAs using <br> React for faster, smoother user experiences. etc.</p>
+
+            </div>
+            <div class="pehli reveal">
+                <p>[03]</p>
+                <h1 style="padding-left: 190px;">UI/UX Design Implementation</h1>
+                <p style="padding-left:110px ;">Translating UI/UX designs into pixel-perfect, <br> interactive front-end interfaces.
+                <br> Ensuring designs are both aesthetically <br> pleasing and user-friendly.</p>
+            </div>
+            <div class="pehli reveal">
+                <p>[04]</p>
+                <h1 style="padding-left: 190px;">Custom Animations and Effects</h1>
+                <p style="padding-left:85px ;">Adding custom animations and interactive effects <br> using CSS and JavaScript to enhance user engagement.</p>
+            </div>
+
+        </div>
+        <div id="con ">
+        <div class="more reveal">
+            <img style="background-color: transparent;   transform: scaleY(-1);" src="https://assets-global.website-files.com/6390ccac206b2dabb754420e/63986a7bb1c6822d1584b516_white-circuler.svg" alt="">
+            <div class="detail">
+                <h1>Have projects in mind??</h1>
+                <h2>Let's work together</h2>
+               <button class="btn" onclick="openModal()">Let's Talk?</button>
+            </div>
+        </div>
+   <footer>
+    <div class="contact">
+        <p>CONTACT </p>
+        <a href="mailto:zainabarshadd4@gmail.com"> <i class="fas fa-envelope"></i></a>
+      
+        <a href="https://www.linkedin.com/in/zainab-arshad-b63329286/" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        
+        <a href="https://github.com/zeynabarshad" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+    
+    </div>
+    <div class="copywrite">
+        <p>&copy;  ZAINAB ARSHAD. All rights reserved.</p>
+    </div>
+
+
+   
+   </footer>
+   <div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h2>Contact Me</h2>
+        <form>
+           <p> Through Email:<i class="fas fa-envelope"></i>  <a href="mailto:zainabarshadd4@gmail.com">zainabarshadd4@gmail.com</a></p>
+           <p>Through Skype: <i class="fab fa-skype"></i><a href="skype:live:.cid.a638d1ba59eee582">skype/zainabarshad</a></p>
+           <p>Linkedin: <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/zainab-arshad-b63329286/">linkedin/zainabarshad</a></p>
+        </form>
+    </div>
+</div> </div>
+    </div >
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+        function reveal(){
+            var reveals =document.querySelectorAll('.reveal');
+        for(var i=0; i<reveals.length; i++){
+            var windowheight=window.innerHeight;
+            var revealtop=reveals[i].getBoundingClientRect().top;
+            var revealpoint=150;
+            if ( revealtop < windowheight -revealpoint){
+                reveals[i].classList.add('active');
+    
+            }
+            else{
+                reveals[i].classList.remove('active');
+            }
+        }
+            }
+       
+    </script>
+</body>
+</html>
